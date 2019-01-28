@@ -10,7 +10,7 @@ describe('enhancer function', () => {
 
       const item = new Item('armor 1', ItemTypes.ARMOR);
 
-      let enhanced = enhancer.succeed(item);
+      let enhanced = enhancer.enhance(item);
 
       expect(enhanced.enhancement).toEqual(item.enhancement + 1);
 
@@ -20,7 +20,7 @@ describe('enhancer function', () => {
 
       const item = new Item('weapon 1', ItemTypes.WEAPON);
 
-      let enhanced = enhancer.succeed(item);
+      let enhanced = enhancer.enhance(item);
 
       expect(enhanced.enhancement).toEqual(item.enhancement + 1);
 
