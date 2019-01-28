@@ -48,7 +48,7 @@ describe('item constructor', () => {
 
     const item = new Item('item 1', ItemTypes.WEAPON);
 
-    expect(item.enhancement).toEqual(100);
+    expect(item.enhancement).toEqual(0);
 
   });
 
