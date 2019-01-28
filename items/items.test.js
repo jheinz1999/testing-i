@@ -82,4 +82,18 @@ describe('item constructor', () => {
 
   });
 
+  it('sets name based on enhancement level', () => {
+
+    const item = new Item('item 1', ItemTypes.WEAPON);
+
+    item.enhancement = 13;
+
+    expect(item.name).toEqual('[+13] item 1');
+
+    item.enhancement = 18;
+
+    expect(item.name).toEqual('[TRI] item 1');
+
+  });
+
 });
