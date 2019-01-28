@@ -6,6 +6,8 @@ const succeed = item => {
 
   enhanced.enhancement++;
 
+  console.log('Enhancement successful!');
+
   return enhanced;
 
 }
@@ -31,6 +33,8 @@ const fail = item => {
     failed.enhancement--;
 
   }
+
+  console.log('Enhancement failed!');
 
   return failed;
 
