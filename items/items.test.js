@@ -86,6 +86,10 @@ describe('item constructor', () => {
 
     const item = new Item('item 1', ItemTypes.WEAPON);
 
+    console.log(item.name);
+
+    expect(item.name).toEqual('item 1');
+
     item.enhancement = 13;
 
     expect(item.name).toEqual('[+13] item 1');
