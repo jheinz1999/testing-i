@@ -63,10 +63,17 @@ const enhance = item => {
 
 }
 
+const repair = item => {
+
+  item.durability = 100;
+
+}
+
 module.exports = {
 
   succeed,
   fail,
-  enhance
+  enhance,
+  repair
 
 }

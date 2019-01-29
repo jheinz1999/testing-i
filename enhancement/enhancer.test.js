@@ -4,6 +4,16 @@ const ItemTypes = require('../items/ItemTypes');
 
 describe('enhancer function', () => {
 
+  it('should repair items with durability less than 100', () => {
+
+    let item = new Item('armor 1', ItemTypes.ARMOR, 33, 13);
+
+    enhancer.repair(item);
+
+    expect(item.durability).toEqual(100);
+
+  })
+
   describe('on success', () => {
 
     it('will always enhance armor up to level 5', () => {
